@@ -36,19 +36,16 @@
 }
 
 .auth-logo {
-  display: flex; align-items: center; gap: var(--s-3);
-  color: #fff; font-size: var(--fs-base);
-  font-weight: var(--fw-semibold);
+  display: flex; align-items: center; gap: 10px;
   text-decoration: none; margin-bottom: auto;
+  flex-shrink: 0;
 }
-.auth-logo-icon {
-  width: 36px; height: 36px;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.15);
-  border-radius: var(--r-md);
-  display: grid; place-items: center;
+.auth-logo .nav-logo-wordmark {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -.025em;
+  display: flex; align-items: baseline; gap: 1px;
 }
-.auth-logo span em { color: #818cf8; font-style: normal; }
 
 .auth-left-content { padding: var(--s-10) 0 var(--s-8); }
 

@@ -466,6 +466,17 @@ p { color: var(--text-2); }
 ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 99px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
 
+/* ── Logo Shared ──────────────────────────────── */
+.nav-logo-wordmark {
+  display: flex; align-items: baseline; gap: 1px;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -.025em;
+  line-height: 1;
+}
+.logo-text-focus { color: var(--text-1); }
+.logo-text-ly    { color: var(--primary); }
+
 /* ── Animations ───────────────────────────────── */
 @keyframes spin    { to { transform: rotate(360deg); } }
 @keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }

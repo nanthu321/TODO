@@ -32,14 +32,14 @@
   letter-spacing: -.03em;
 }
 .app-logo-icon {
-  width: 36px; height: 36px;
-  background: var(--grad-primary);
-  border-radius: var(--radius-md);
+  width: 34px; height: 34px;
+  border-radius: 9px;
   display: grid; place-items: center;
-  box-shadow: 0 4px 12px rgba(99,102,241,.35);
   flex-shrink: 0;
+  overflow: hidden;
 }
-.app-logo span em { color: var(--color-primary); font-style: normal; }
+.app-logo span em { font-style: normal; }
+.app-logo .logo-text-ly { color: var(--color-primary); }
 
 /* Search */
 .header-search { flex: 1; max-width: 440px; }
