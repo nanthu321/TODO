@@ -1,0 +1,118 @@
+:root{
+    --indigo:      #4f46e5;
+    --indigo-600:  #4338ca;
+    --violet:      #7c3aed;
+    --violet-soft: #a78bfa;
+    --pure-white : #ffffff;
+    --font: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+    --gray: #475569;
+    --grad: linear-gradient(135deg, var(--indigo) 0%, var(--violet) 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+}
+
+/* Header style */
+.header{
+    display: flex;
+    align-items: center;
+    height: 72px;   
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(248, 250, 252, .82);
+    padding: .5% 8%;
+    border-bottom: 1px solid transparent;
+}
+.header .container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo img{
+    height: 34px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    gap: 10;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    font-size: .95rem;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--indigo);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+nav ul li a:hover{
+    color: var(--indigo);
+    transition: color 0.3s ease;
+}
+.header-action{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: .95rem;
+    line-height: 1;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.btn-login{
+    background-color: transparent;
+}
+.btn-login:hover{
+    color: var(--indigo);
+    background: #eef2ff;
+}
+.btn-get-started{
+    box-shadow: 0 6px 16px rgba(79, 70, 229, .28);
+    background: var(--grad);
+    color: var(--pure-white);
+}
+.btn-get-started:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease
+}
